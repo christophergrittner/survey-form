@@ -1,0 +1,111 @@
+#title {
+    font-family: Raleway, helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+body {
+    background-color: rgb(170, 250, 223);
+}
+main {
+    background-color: bisque;
+    display: block;
+    margin: 0 12% 0 12%;
+}
+#description {
+    font-family: Raleway, helvetica, sans-serif;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+#survey-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row: repeat(8, fit-content);
+}
+.leftcolumn {
+    text-align: right;
+    align-items: right;
+    color: black;
+    font-family: Raleway, helvetica, sans-serif;
+}
+#name-label, #email-label, #number-label {
+    display: grid;
+    text-align: right;
+    margin-top: 17px;
+    font-family: Raleway, helvetica, sans-serif;
+}
+.rightcolumn {
+    text-align: left;
+    color: black;
+    align-items: center;
+    justify-self: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+#name{
+    border-radius: 4px;
+    padding: 3px 0 3px 3px;
+    outline: none;
+    resize: none;
+    width: 40%;
+    border: groove;
+}
+#email{
+    border-radius: 4px;
+    padding: 3px 0 3px 3px;
+    outline: none;
+    resize: none;
+    width: 40%;
+    border: groove;
+}
+#number {
+    width: 40%;
+    border-radius: 4px;
+    padding: 3px 0 3px 3px;
+    outline: none;
+    resize: none;
+    border: groove;
+}
+#dropdown {
+    background-color: white;
+    padding: 3px 0 3px 3px;
+    border-radius: 4px;
+    margin-top: 14px;
+    border: groove;
+}
+.radiogroup {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+#checkboxlist {
+    list-style: none;
+    float: left;
+}
+#textbox {
+    height: 60px;
+    width: 300px;
+    margin: 14px 0 14px 0;
+    font-family: Raleway, sans-serif;
+    border: groove;
+    border-radius: 4px;
+}
+#submit {
+    padding: 6px 8px 6px 8px;
+    background-color: greenyellow;
+    font-family: Raleway, sans-serif;
+    color: black; 
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14pt;
+    border: groove;
+    display: grid;
+    margin: 10px auto 10px auto;
+}
+#lastbox {
+    grid-column-start: 1;
+    grid-row-start: 9;
+    grid-column-end: 3;
+    grid-row-end: 10; 
+}

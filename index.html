@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form - FCC</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Let us know how we can improve <strong>Packesel</strong>.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <div>
+                    <label id="name-label">Name*:</label>
+                </div>
+                <div>
+                    <input type="text" required class="rightcolumn" id="name" placeholder="Insert Name">
+                </div>
+                <div>
+                    <label id="email-label">Email*:</label>
+                </div>
+                <div>
+                    <input type="email" required class="rightcolumn" id="email" placeholder="Insert Email">
+                </div>
+                <div>
+                    <label id="number-label">Phone Number:</label>
+                </div>
+                <div>
+                    <input type="number" class="rightcolumn" id="number" placeholder="Insert Number" 
+                    min="1000" max="99999999999">
+                </div>
+                <div>
+                    <p class="leftcolumn" id="dropdown-label">How did you hear about '<strong>Packesel</strong>'?</p>
+                </div>
+                <div>
+                    <select id="dropdown" placeholder="Please select">
+                        <option value="">Please select...</option>
+                        <option value="socialmedia">Social Media</option>
+                        <option value="forf">Friends or family</option>
+                        <option value="adv">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="leftcolumn" id="radio-label">How likely are you going to recommend '<strong>Packesel</strong>' to a friend?</p>
+                </div>
+                <div class="radiogroup">
+                    <label for="recommend1">
+                        <input type="radio" id="recommend-1" name="recommend" value="1">1
+                    </label>
+                    <label for="recommend2">
+                        <input type="radio" id="recommend-2" name="recommend" value="2">2
+                    </label>
+                    <label for="recommend2">
+                        <input type="radio" id="recommend3" name="recommend" value="3">3
+                    </label>
+                    <label for="recommend3">
+                        <input type="radio" id="recommend4" name="recommend" value="4">4
+                    </label>
+                    <label for="recommend5">
+                        <input type="radio" id="recommend5" name="recommend" value="5">5
+                    </label>
+                </div>
+                <div>
+                    <p class="leftcolumn" id="radio-label">How much do you like '<strong>Packesel</strong>'?</p>
+                </div>
+                <div class="radiogroup">
+                    <label for="like1">
+                        <input type="radio" id="like1" name="like" value="1">1
+                    </label>
+                    <label for="lik2">
+                        <input type="radio" id="like2" name="like" value="2">2
+                    </label>
+                    <label for="like3">
+                        <input type="radio" id="like3" name="like" value="3">3
+                    </label>
+                    <label for="like4">
+                        <input type="radio" id="like4" name="like" value="4">4
+                    </label>
+                    <label for="like5">
+                        <input type="radio" id="like5" name="like" value="5">5
+                    </label>
+                </div>
+                <div>
+                    <p class="leftcolumn" id="checkbox-label">What features do you like most?</p>
+                </div>
+                <div class="checkboxes">
+                    <ul id="checkboxlist">
+                        <li><input type="checkbox" name="feature1" value="Guide">Guide</li>
+                        <li><input type="checkbox" name="feature2" value="ToDo">ToDo lists</li>
+                        <li><input type="checkbox" name="feature3" value="Calendar">Calendar</li>
+                        <li><input type="checkbox" name="feature4" value="Collaboration">Collaboration</li>
+                        <li><input type="checkbox" name="feature5" value="Service">Overview of needed furniture</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="leftcolumn" id="comment-label">Do you have any additional comments about improvements or wishes?</p>
+                </div>
+                <div>
+                    <textarea id="textbox" placeholder="Make Packesel a better app..."></textarea>
+                </div>
+                <div id="lastbox">
+                    <button type="submit" name="action" id="submit">Submit Form</button>
+                </div>
+
+            </form>
+
+
+
+
+        </main>
+    </body>
+    <footer>
+
+
+
+
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</html>
